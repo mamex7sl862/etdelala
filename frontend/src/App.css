@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  --brand-blue: #2b7be4;
+  --brand-green: #3fb36f;
+  --muted: #f4f6f9;
+  --accent: #5b6cf6;
+  --text-dark: #0f1724;
+}
+
+/* Hero styles */
+.hero {
+  background: linear-gradient(
+    90deg,
+    rgba(96, 165, 250, 0.08),
+    rgba(99, 102, 241, 0.04)
+  );
+  padding: 4rem 0;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+.hero-sub {
+  color: #4b5563;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+}
+.search-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.search-input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  border-radius: 9999px;
+  border: 2px solid rgba(15, 23, 36, 0.08);
+  background: white;
+}
+.find-btn {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--brand-blue), var(--accent));
+  color: white;
+  font-weight: 700;
+}
+
+/* Rounded section banners */
+.section-banner {
+  background: var(--brand-green);
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.08);
+}
+
+/* Global typography */
+body,
+html {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  color: var(--text-dark);
+}
+
+/* Header tweaks */
+header {
+  background: white;
+}
+.container.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo {
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: var(--brand-blue);
+}
+.nav-link {
+  color: #374151;
+  margin-right: 1.25rem;
+}
+.nav-cta {
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+}
+
+/* Card shadow refinement */
+.shadow-2xl {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06) !important;
+}
